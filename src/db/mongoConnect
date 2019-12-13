@@ -1,0 +1,1 @@
+/users/javascript/mongodb/bin/mongod -dbpath=/users/javascript/mongodb-data

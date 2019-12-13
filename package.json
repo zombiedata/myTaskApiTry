@@ -1,0 +1,30 @@
+{
+  "name": "codebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "db": "/users/javascript/mongodb/bin/mongod -dbpath=/users/javascript/mongodb-data",
+    "dev": "./node_modules/.bin/env-cmd -f ./config/dev.env nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "multer": "^1.4.2",
+    "sharp": "^0.23.4",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.3.5",
+    "mongoose": "^5.7.13",
+    "request": "^2.88.0",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1",
+    "env-cmd": "^10.0.1",
+    "chalk": "^3.0.0"
+  }
+}
