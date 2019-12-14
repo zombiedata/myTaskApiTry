@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node src/index.js",
     "db": "/users/javascript/mongodb/bin/mongod -dbpath=/users/javascript/mongodb-data",
-    "dev": "./node_modules/.bin/env-cmd -f ./config/dev.env nodemon src/index.js"
+    "dev": "./node_modules/.bin/env-cmd -f ./config/dev.env nodemon src/index.js",
+    "test": "./node_modules/.bin/env-cmd -f ./config/test.env jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +28,8 @@
   },
   "devDependencies": {
     "env-cmd": "^10.0.1",
-    "nodemon": "^2.0.1"
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.1",
+    "supertest": "^4.0.2"
   }
 }
